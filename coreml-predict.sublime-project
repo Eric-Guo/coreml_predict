@@ -1,0 +1,10 @@
+{
+	"folders":
+	[
+		{
+      "folder_exclude_patterns": [".idea", "tmp"],
+      "file_exclude_patterns": ["coreml-predict.sublime-workspace","*.bundle","*.so", "*.o", "*.a"],
+			"path": "."
+		}
+	]
+}

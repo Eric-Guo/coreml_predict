@@ -11,3 +11,7 @@
 *.o
 *.a
 mkmf.log
+.DS_Store
+
+# gem specify ignore files
+coreml-predict.sublime-workspace
