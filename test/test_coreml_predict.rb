@@ -2,12 +2,14 @@
 
 require "test_helper"
 
-class TestCoremlPredict < Minitest::Test
+class TestCoreMLPredict < Minitest::Test
   def test_that_it_has_a_version_number
-    refute_nil ::CoremlPredict::VERSION
+    refute_nil ::CoreMLPredict::VERSION
   end
 
   def test_it_does_something_useful
-    assert false
+    model = CoreMLPredict::MLModel.from_mlpackage("california.mlpackage")
+    result = model.predict({AveBedrms: 3, HouseAge: 20, AveOccup: 3})
+    assert result == {PRICE: 1.8071459064013677}
   end
 end

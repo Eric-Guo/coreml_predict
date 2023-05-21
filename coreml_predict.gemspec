@@ -4,7 +4,7 @@ require_relative "lib/coreml_predict/version"
 
 Gem::Specification.new do |spec|
   spec.name = "coreml_predict"
-  spec.version = CoremlPredict::VERSION
+  spec.version = CoreMLPredict::VERSION
   spec.authors = ["Eric-Guo"]
   spec.email = ["eric.guocz@gmail.com"]
 
@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
   spec.files = Dir.chdir(__dir__) do
     `git ls-files -z`.split("\x0").reject do |f|
-      (File.expand_path(f) == __FILE__) || f.start_with?(*%w[bin/ test/ spec/ features/ .git .circleci appveyor])
+      (File.expand_path(f) == __FILE__) || f.start_with?(*%w[bin/ test/ spec/ features/ .git .circleci .idea Gemfile appveyor Rakefile coreml-predict.code-workspace coreml-predict.sublime-project])
     end
   end
   spec.bindir = "exe"

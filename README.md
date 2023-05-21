@@ -1,4 +1,4 @@
-# CoremlPredict
+# CoreML Predict
 
 MLModel (ext name mlpackage) is an Apple format AI model, this gem provide *predict* method to run those AI model in MacOS using ruby.
 
@@ -11,7 +11,7 @@ CoreML 3 only available on MacOS 13.x or later, so make sure you having a Mac.
 ```ruby
 require 'coreml_predict'
 # load MLModel, in the current folder
-model = CoreMLModel("california.mlpackage")
+model = CoreMLPredict::MLModel.from_mlpackage("california.mlpackage")
 # Run the model
 model.predict({"AveBedrms": 3, "HouseAge": 20, "AveOccup": 3})
 ```
@@ -32,4 +32,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the CoremlPredict project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/coreml_predict/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the CoreMLPredict project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/coreml_predict/blob/main/CODE_OF_CONDUCT.md).

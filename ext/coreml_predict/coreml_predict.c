@@ -1,9 +1,9 @@
 #include "coreml_predict.h"
 
-VALUE rb_mCoremlPredict;
+VALUE rb_mCoreMLPredict;
 
 RUBY_FUNC_EXPORTED void
 Init_coreml_predict(void)
 {
-  rb_mCoremlPredict = rb_define_module("CoremlPredict");
+  rb_mCoreMLPredict = rb_define_module("CoreMLPredict");
 }
